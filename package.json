@@ -11,7 +11,8 @@
     "serve": "vite --open --host",
     "dev": "concurrently \"yarn start\" \"yarn serve\"",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "vercel-build": "node index.js"
   },
   "dependencies": {
     "@emotion/react": "^11.10.8",
