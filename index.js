@@ -13,7 +13,7 @@ import routes from './routes/index.js'
 // vars
 const env = dotenv.config().parsed;
 const app = express();
-const PORT = env.PORT || 2020;
+const PORT = env?.PORT || 2020;
 
 // middlewars
 app.use(cors());
