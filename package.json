@@ -1,0 +1,62 @@
+{
+  "name": "vite-test",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "engines": {
+    "node": "18.x"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "serve": "vite --open --host",
+    "dev": "concurrently \"yarn start\" \"yarn serve\"",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.10.8",
+    "@emotion/styled": "^11.10.8",
+    "@mui/material": "^5.12.2",
+    "@reduxjs/toolkit": "^1.9.1",
+    "air-datepicker": "^3.3.5",
+    "axios": "^1.4.0",
+    "bcrypt": "^5.1.0",
+    "cors": "^2.8.5",
+    "dotenv": "^16.0.3",
+    "express": "^4.18.2",
+    "express-fileupload": "^1.4.0",
+    "express-validator": "^7.0.1",
+    "i18next": "^22.4.8",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "i18next-http-backend": "^2.1.1",
+    "icomoon-react": "^3.0.0",
+    "jsonwebtoken": "^9.0.0",
+    "moment": "^2.29.4",
+    "mongoose": "^7.2.0",
+    "morgan": "^1.10.0",
+    "nodemon": "^2.0.22",
+    "normalize.css": "^8.0.1",
+    "overlayscrollbars": "^2.1.1",
+    "overlayscrollbars-react": "^0.5.0",
+    "prop-types": "^15.8.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "react-i18next": "^12.1.1",
+    "react-lazy-load-image-component": "^1.5.6",
+    "react-parallax-mouse": "^2.0.1",
+    "react-redux": "^8.0.5",
+    "react-responsive": "^9.0.2",
+    "react-router-dom": "^6.6.1",
+    "react-transition-group": "^4.4.5",
+    "redux": "^4.2.0",
+    "sass": "^1.57.1",
+    "svg-fill": "^2.0.4",
+    "swiper": "^8.4.5",
+    "use-clipboard-copy": "^0.2.0",
+    "uuid": "^9.0.0"
+  },
+  "devDependencies": {
+    "concurrently": "^7.6.0",
+    "terser": "^5.16.1"
+  }
+}
