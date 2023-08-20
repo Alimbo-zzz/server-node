@@ -25,7 +25,7 @@ app.use('/', express.static(resolve(__dirname))); // путь для всех э
 app.use(routes) // use Routes API
 
 app.use((req, res) => {
-	res.sendfile(resolve(__dirname, 'front-end/index.html'))
+	res.sendfile(resolve(__dirname, 'index.html'))
 })
 
 
