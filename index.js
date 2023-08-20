@@ -7,8 +7,6 @@ import { dirname, resolve } from 'path';
 import { fileURLToPath } from 'url';
 const __dirname = dirname(fileURLToPath(import.meta.url));
 
-// routes
-import routes from './routes/index.js'
 
 // vars
 const env = dotenv.config().parsed;
@@ -22,7 +20,16 @@ app.use(express.json()); // позволяет читать json в запрос
 app.use(express.urlencoded({ extended: true }));
 app.use(morgan(':method :url :status :res[content-length] :response-time ms')); // выведение в консоль всех запросов
 app.use('/', express.static(resolve(__dirname))); // путь для всех элементов
-app.use(routes) // use Routes API
+
+
+
+app.get('/test', (req, res) => {
+	try {
+		return res.status(200).json({ success: true, message: 'ok' })
+	} catch (error) {
+		return res.status(400).json({ error })
+	}
+})
 
 app.use((req, res) => {
 	res.sendfile(resolve(__dirname, 'front-end/index.html'))
