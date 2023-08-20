@@ -7,11 +7,7 @@
     "node": "18.x"
   },
   "scripts": {
-    "start": "node index.js",
-    "serve": "vite --open --host",
-    "dev": "concurrently \"yarn start\" \"yarn serve\"",
-    "build": "vite build",
-    "preview": "vite preview",
+    "start": "nodemon index.js",
     "vercel-build": "node index.js"
   },
   "dependencies": {
